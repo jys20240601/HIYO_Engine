@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HIYO_Engine", "HIYO_Engine.vcxproj", "{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HIYO_RESOURCE", "..\HIYO_RESOURCE\HIYO_RESOURCE.vcxitems", "{7B7808BA-5834-4C6E-A567-E6F90E056A13}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HIYO_Window", "..\HIYO_Window\HIYO_Window.vcxproj", "{E0480F81-6B54-447A-BDAA-A9CDC180EA74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Debug|x64.ActiveCfg = Debug|x64
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Debug|x64.Build.0 = Debug|x64
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Debug|x86.ActiveCfg = Debug|Win32
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Debug|x86.Build.0 = Debug|Win32
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Release|x64.ActiveCfg = Release|x64
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Release|x64.Build.0 = Release|x64
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Release|x86.ActiveCfg = Release|Win32
+		{C07E3E71-B1BF-4130-A005-4E4C8740B8D6}.Release|x86.Build.0 = Release|Win32
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Debug|x64.ActiveCfg = Debug|x64
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Debug|x64.Build.0 = Debug|x64
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Debug|x86.ActiveCfg = Debug|Win32
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Debug|x86.Build.0 = Debug|Win32
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Release|x64.ActiveCfg = Release|x64
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Release|x64.Build.0 = Release|x64
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Release|x86.ActiveCfg = Release|Win32
+		{E0480F81-6B54-447A-BDAA-A9CDC180EA74}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7AEAE1F-C947-420E-855A-234B240F1F76}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\HIYO_RESOURCE\HIYO_RESOURCE.vcxitems*{7b7808ba-5834-4c6e-a567-e6f90e056a13}*SharedItemsImports = 9
+		..\HIYO_RESOURCE\HIYO_RESOURCE.vcxitems*{e0480f81-6b54-447a-bdaa-a9cdc180ea74}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal
