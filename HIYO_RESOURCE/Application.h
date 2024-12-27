@@ -14,8 +14,6 @@ namespace HIYO
 		void Initialize(HWND hWnd);
 		void Run();
 
-		void Update();
-		void LateUpdate();
 		void Render();
 
 	private:

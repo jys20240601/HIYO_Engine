@@ -3,11 +3,11 @@
 
 namespace HIYO
 {
-	GameObject::GameObject()
-		: mX(0)
-		, mY(0)
-		, mWidth(0)
-		, mHeight(0)
+	GameObject::GameObject(float x,float y,float width,float height)
+		: mX(x)
+		, mY(y)
+		, mWidth(width)
+		, mHeight(height)
 		, mSpeed(0)
 		, mColor(RGB(0, 0, 0))
 	{
@@ -31,15 +31,6 @@ namespace HIYO
 
 	void GameObject::Render(HDC hdc)
 	{
-
-		HBRUSH NewBrush = CreateSolidBrush(mColor);
-		HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, NewBrush);
-
-		Rectangle(hdc, mX, mY, mX + mWidth, mY + mHeight);
-
-		SelectObject(hdc, oldBrush);
-
-		DeleteObject(NewBrush);
 
 	}
 

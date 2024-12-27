@@ -4,19 +4,14 @@
 
 namespace HIYO
 {
-	class Bullet
+	class Bullet:public GameObject
 	{
 	public:
-		Bullet();
+		Bullet(float x,float y);
 		~Bullet();
 
-		void Initialize();
 		void Update();
 		void Render(HDC hdc);
-		void LateUpdate();
-
-		void Fire(float x, float y);
-
 
 	private:
 	};

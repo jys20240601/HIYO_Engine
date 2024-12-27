@@ -43,10 +43,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
             TranslateMessage(&msg);
             DispatchMessage(&msg);
         }
-        else
-        {
+
             application.Run();
-        }
+
     }
 
     return (int) msg.wParam;

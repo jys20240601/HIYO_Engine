@@ -3,21 +3,15 @@
 #include <GameObject.h>
 
 namespace HIYO
-
 {
-	class Player : public GameObject
-	{
+    class Player : public GameObject
+    {
+    public:
+        Player();
+        ~Player();
 
-	public:
-
-		Player();
-		~Player();
-
-		void Fire();
-		void Update();
-		void Render(HDC hdc);
-
-	private:
-
-	};
+        void Fire(std::vector<Bullet>& bullets);
+        void Update();
+        void Render(HDC hdc);
+    };
 }

@@ -1,49 +1,42 @@
 #include "Application.h"
+#include "Player.h"
+#include "Bullet.h"
 
 namespace HIYO
 {
-	Application::Application()
-		:mHwnd(nullptr)
-		, mHdc(nullptr)
-		, mSpeed(0.0f)
-		, mX(0.0f)
-		, mY(0.0f)
-	{
+    Application::Application()
+        : mHwnd(nullptr)
+        , mHdc(nullptr)
+        , mPlayer()
+    {
+    }
 
-	}
+    Application::~Application()
+    {
+        if (mHdc) ReleaseDC(mHwnd, mHdc);
+    }
 
-	Application::~Application()
-	{
+    void Application::Initialize(HWND hWnd)
+    {
+        mHwnd = hWnd;
+        mHdc = GetDC(hWnd);
+    }
 
-	}
+    void Application::Run()
+    {
+        Update();
+        LateUpdate();
+        Render();
+    }
 
-	void Application::Initialize(HWND hWnd)
-	{
-		mHwnd = hWnd;
-		mHdc = GetDC(hWnd);
-	}
+    void Application::Render()
+    {
+        PatBlt(mHdc, 0, 0, 800, 600, WHITENESS);
 
-	void Application::Run()
-	{
-		Update();
-		LateUpdate();
-		Render();
-	}
-
-	void Application::Update()
-	{
-
-	}
-
-	void Application::LateUpdate()
-	{
-
-	}
-
-	void Application::Render()
-	{
-
-	}
-
-
+        mPlayer.Render(mHdc);
+        for (auto& bullet : mBullets)
+        {
+            bullet.Render(mHdc);
+        }
+    }
 }

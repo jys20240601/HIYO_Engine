@@ -7,7 +7,7 @@ namespace HIYO
 	{
 	public:
 
-		GameObject();
+		GameObject(float x, float y, float width, float height);
 		~GameObject();
 
 		void Update();

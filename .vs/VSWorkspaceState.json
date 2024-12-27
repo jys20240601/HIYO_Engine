@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\HIYO_Engine",
-    "\\HIYO_RESOURCE",
-    "\\HIYO_Window"
+    "\\HIYO_RESOURCE"
   ],
-  "SelectedNode": "\\HIYO_Engine\\HIYO_Engine.vcxproj",
+  "SelectedNode": "\\HIYO_Engine\\HIYO_Engine.cpp",
   "PreviewInSolutionExplorer": false
 }
